@@ -1,0 +1,324 @@
+body {
+    background-color: #252830;
+    color: #CFD2DA;
+    font-family: Helvetica, serif;
+    max-width: 1200px;
+    margin: auto;
+}
+
+hr {
+    text-align: center;
+    width: 90%;
+    border: thin #CFD2DA solid;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: thin #434857 solid;
+}
+
+#logo {
+    margin: 38px 0 0 25px;
+    text-align: center;
+}
+#logo p:nth-child(1) {
+    color:#fff;
+    font-size: 26px;
+}
+#logo p:nth-child(2) {
+    color: #00a5e0;
+    font-size: 12px;
+    margin-top: -20px;
+}
+
+
+#contact_header {
+    margin: 12px 25px 0 0;
+    text-align: center;
+}
+#contact_header p:nth-child(1) {
+    color: #00a5e0;
+    font-size: 12px;
+    margin-bottom: -5px;
+    margin-top: 14px;
+}
+#contact_header p:nth-child(2) {
+    color:#fff;
+    font-size: 26px;
+    
+}
+#contact_header p:nth-child(3) {
+    color: #929292;
+    font-size: 18px;
+    margin-top: -23px;
+}
+
+#section_banner {
+    background-image: url('../img/banner.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 560px;
+    margin-top: 0;
+}
+
+#banner_logo {
+    background-color: rgba(255, 255, 255, 0.1);
+    height: 183px;
+    top: 240px;
+    left: 180px;
+    position: relative;
+    text-align: center;
+    width: 432px;
+}
+
+#banner_logo p:nth-child(1) {
+    color:  #cfd2da;
+    font-size: 16px;
+    padding-top: 30px;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.75);
+}
+#banner_logo p:nth-child(2) {
+    color:  #fff;
+    margin-top: -20px;
+    font-size: 60px;
+    font-weight: bold;
+    text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.75);
+}
+#banner_logo p:nth-child(3) {
+    color:  #cfd2da;
+    margin-top: -15px;
+    font-size: 15px;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.75);
+}
+
+#section_lme {
+    display: flex;
+    justify-content: space-around;
+    
+    margin-top: 20px;
+    /*border-bottom: thin #434857 solid; */
+    padding-bottom: 30px;
+}
+
+#lme_logo {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    height: 80px;
+}
+
+#lme_logo p:nth-child(1){
+    grid-column: 1/3;
+    grid-row: 1;    
+    color:#9f86ff;
+    font-size: 16px;
+    text-align: center;
+    
+}
+#lme_logo p:nth-child(2){
+    grid-column: 1;
+    grid-row: 2;    
+    color:#9f86ff;
+    font-size: 40px;
+    font-weight: bold;
+    margin-top: -25px;
+}
+#lme_date {
+    grid-column: 1/3;
+    grid-row: 3;    
+    color:#e4d836;
+    font-size: 16px;
+    text-align: center;
+    margin-top: -25px;
+}
+.lme_logo_unit {
+    grid-column: 2;
+    grid-row: 2;
+    background-color: #1997c6;
+    border-radius: 3px;
+    color: #fff;
+    height: 28px;
+    padding-top: 4px;
+    font-size: 14px;
+    width: 90px;
+    text-align: center;
+    margin-top: -12px;
+    margin-left: 30px;
+}
+
+
+.lme_metal {
+    display: grid;
+    grid-template-columns: 50px 50px;
+    grid-template-rows: 1fr 1fr 1fr;
+
+    border: thin #1997c6 solid;
+    color: #1997c6;
+    height: 80px;
+    text-align: center;
+    width: 100px;
+}
+.lme_val {
+    grid-column: 2;
+    grid-row: 1;
+
+    font-size: 14px;
+    font-weight: bold;
+    margin-left: 20px;
+}
+.lme_name {
+    grid-column: 1;
+    grid-row: 2;
+
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: -13px;
+}
+.lme_metal p {
+    grid-column: 1/3;
+    grid-row: 3;
+    /*border: thin #fff solid;*/
+    font-size: 14px;
+    margin-top: -2px;
+}
+
+#lme_price_al
+,#lme_price_cu
+,#lme_price_zn
+,#lme_price_ni
+,#lme_price_pb
+,#lme_price_sn
+{
+    grid-column: 2;
+    grid-row: 2;
+    border-radius: 3px;
+    color: #fff;
+    height: 28px;
+    padding-top: 4px;
+    font-size: 14px;
+    text-align: center;
+    width: 70px;
+    margin-left: 12px; 
+}
+#lme_price_al {
+    background-color: #1bc98e;
+}
+#lme_price_cu {
+    background-color: #1bc98e;
+}
+#lme_price_zn {
+    background-color: #1bc98e;
+}
+#lme_price_ni {
+    background-color: #1bc98e;
+}
+#lme_price_pb {
+    background-color: #1bc98e;
+}
+#lme_price_sn {
+    background-color: #1bc98e;
+}
+
+/*---------------------------------------------*/
+#section_westroute {
+    display: flex;
+    justify-content: space-around;
+    
+    margin-top: 20px;
+}
+
+#westroute_about {
+    border: thin #fff solid;    
+}
+
+#westroute_metal {
+    border: thin #fff solid;    
+}
+
+/*---------------------------------------------*/
+#section_contact_footer {
+    display: flex;
+    justify-content: space-between;
+    
+    margin-top: 20px;
+    height: 312px;
+}
+
+#contact_footer_map {
+    border: thin #1997c6 solid;
+    padding: 5px;
+}
+
+#contact_footer_txt {
+    width: 100%;
+}
+
+#cnt{
+    font-size: 26px;
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+}
+.contact_footer {
+    display: flex;
+    justify-content: space-around;
+}
+
+.contact_footer p:nth-child(1) {
+    color: #00a5e0;
+}
+.contact_footer p:nth-child(2) {
+    width: 50%;
+}
+
+.mx_color_blue {
+    color: #00a5e0;    
+}
+
+/*---------------------------------------------*/
+footer {
+    display: flex;
+    justify-content: space-between;
+    
+    margin-top: 50px;
+    padding-top: 10px;
+    border-top: thin #434857 solid;
+}
+
+#maxsa_copyright {
+    text-align: center;
+}
+#maxsa_copyright p:nth-child(1) {
+    color:#fff;
+    font-size: 26px;
+}
+#maxsa_copyright p:nth-child(2) {
+    color: #00a5e0;
+    font-size: 12px;
+    margin-top: -20px;    
+}
+
+
+#westroute_copyright {
+    text-align: center;
+}
+
+#westroute_copyright p:nth-child(1) {
+    color:#fff;
+    font-size: 26px;
+}
+#westroute_copyright p:nth-child(2) {
+    color: #00a5e0;
+    font-size: 12px;
+    margin-top: -20px;
+}
+
+#ssh {
+    background-image: url('../img/ssh.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 471px;
+    margin-top: 0;
+}
