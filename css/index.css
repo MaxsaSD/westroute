@@ -21,6 +21,7 @@ header {
 #logo {
     margin: 38px 0 0 25px;
     text-align: center;
+    width: 100%;
 }
 #logo p:nth-child(1) {
     color:#fff;
@@ -36,6 +37,7 @@ header {
 #contact_header {
     margin: 12px 25px 0 0;
     text-align: center;
+    width: 100%;
 }
 #contact_header p:nth-child(1) {
     color: #00a5e0;
@@ -58,7 +60,8 @@ header {
     display: flex;
     justify-content:space-around;
     margin-top: 36px;
-    width: 320px;
+    /*width: 320px;*/
+    width: 100%;
     cursor: pointer;
 }
 
@@ -243,6 +246,253 @@ header {
     background-color: #1bc98e;
 }
 
+@media (max-width:1080px){
+    #lme_price_al ,#lme_price_cu ,#lme_price_zn ,#lme_price_ni ,#lme_price_pb ,#lme_price_sn {
+        grid-column: 2;
+        grid-row: 2;
+        border-radius: 3px;
+        color: #fff;
+        height: 24px;
+        padding-top: 3px;
+        font-size: 12px;
+        text-align: center;
+        width: 55px;
+        margin-left: 12px; 
+    }
+}     
+@media (max-width:990px){
+
+    #contact_header p:nth-child(2) {
+        color:#fff;
+        font-size: 18px;
+    }    
+    
+    #icon{
+        display: flex;
+        justify-content:space-around;
+        margin-top: 36px;
+        cursor: pointer;
+    }
+    
+    
+    .lme_metal {
+        display: grid;
+        grid-template-columns: 50px 50px;
+        grid-template-rows: 1fr 1fr 1fr;
+
+        border: thin #1997c6 solid;
+        color: #1997c6;
+        height: 80px;
+        text-align: center;
+        width: 100px;
+    }
+    .lme_val {
+        grid-column: 2;
+        grid-row: 1;
+
+        font-size: 14px;
+        font-weight: bold;
+        margin-left: 20px;
+    }
+    
+    .lme_name {
+        grid-column: 1;
+        grid-row: 2;
+
+        font-size: 25px;
+        font-weight: bold;
+        margin-top: -20px;
+        margin-left: -8px;
+    }
+    .lme_metal p {
+        grid-column: 2;
+        grid-row: 2;
+        /*border: thin #fff solid;*/
+        color:  #00A5E0;
+        font-size: 12px;
+        margin-top: -2px;
+        margin-left: -18px;
+    }    
+    
+    #lme_price_al
+    ,#lme_price_cu
+    ,#lme_price_zn
+    ,#lme_price_ni
+    ,#lme_price_pb
+    ,#lme_price_sn
+    {
+        grid-column: 1/3;
+        grid-row: 3;
+        border-radius: 3px;
+        color: #fff;
+        font-size: 12px;
+        text-align: center;
+        height: 24px;
+        width: 55px;
+        margin-top:-10px;
+        margin-left: 20px; 
+    } 
+
+}
+@media (max-width:800px){
+
+    #logo p:nth-child(1) {
+        color:#fff;
+        font-size: 18px;
+    }
+    
+    #logo p:nth-child(2) {
+        color: #00a5e0;
+        font-size: 10px;
+        margin-top: -20px;
+    }
+
+
+
+    #lme_logo {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        height: 80px;
+        text-align: center;
+    }
+    #lme_logo p:nth-child(1){
+        grid-column: 1;
+        grid-row: 1;    
+        color:#9f86ff;
+        font-size: 12px;
+        text-align: center;
+    }
+    #lme_logo p:nth-child(2){
+        grid-column: 1;
+        grid-row: 2;    
+        color:#9f86ff;
+        font-size: 40px;
+        font-weight: bold;
+        margin-top: -25px;
+    }
+    #lme_date {
+        grid-column: 1;
+        grid-row: 3;    
+        color:#e4d836;
+        font-size: 12px;
+        font-weight: bold;
+        margin-top: -25px;
+    }    
+    .lme_logo_unit{
+        display: none;
+    }
+}
+@media (max-width:740px){
+    #lme_logo {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        height: 80px;
+        text-align: center;
+    }
+    #lme_logo p:nth-child(1){
+        display: none;
+    }
+    #lme_logo p:nth-child(2){
+        grid-column: 1;
+        grid-row: 1;    
+        color:#9f86ff;
+        font-size: 30px;
+        font-weight: bold;
+        margin-top: 15px;
+    }
+    #lme_date {
+        grid-column: 1;
+        grid-row: 1;    
+        color:#e4d836;
+        font-size: 12px;
+        font-weight: bold;
+        margin-top: 55px;
+    }    
+    .lme_logo_unit{
+        display: none;
+    }
+}
+@media (max-width:685px){
+    
+    header {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    #logo {
+        margin: 38px 0 0 25px;
+        text-align: center;
+    }
+    #logo p:nth-child(1) {
+        color:#fff;
+        font-size: 26px;
+    }
+    #logo p:nth-child(2) {
+        color: #00a5e0;
+        font-size: 12px;
+        margin-top: -20px;
+    }
+
+
+#contact_header {
+    margin: 12px 25px 0 0;
+    text-align: center;
+}
+#contact_header p:nth-child(1) {
+    color: #00a5e0;
+    font-size: 12px;
+    margin-bottom: -5px;
+    margin-top: 14px;
+}
+#contact_header p:nth-child(2) {
+    color:#fff;
+    font-size: 26px;
+    
+}
+#contact_header p:nth-child(3) {
+    color: #929292;
+    font-size: 18px;
+    margin-top: -23px;
+}    
+    
+    
+    #lme_logo {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        height: 80px;
+        text-align: center;
+    }
+    #lme_logo p:nth-child(1){
+        display: none;
+    }
+    #lme_logo p:nth-child(2){
+        grid-column: 1;
+        grid-row: 1;    
+        color:#9f86ff;
+        font-size: 25px;
+        font-weight: bold;
+        margin-top: 5px;
+    }
+    #lme_date {
+        grid-column: 1;
+        grid-row: 1;    
+        color:#e4d836;
+        font-size: 9px;
+        font-weight: bold;
+        margin-top: 40px;
+    }    
+    .lme_logo_unit{
+        display: none;
+    }
+}
+
+
+
+
 /*---------------------------------------------*/
 #section_westroute {
     display: flex;
@@ -386,8 +636,6 @@ header {
     border: thin #1997c6 solid;
     padding: 5px;
     
-    height: 315px;
-    width: 700px;
 }
 
 #contact_footer_txt {
